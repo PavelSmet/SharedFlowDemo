@@ -13,8 +13,7 @@ class DemoViewModel : ViewModel() {
         sharedFlowInit()
     }
 
-    fun sharedFlowInit() {
-        private fun sharedFlowInit() {
+    private fun sharedFlowInit() {
             viewModelScope.launch {
                 for (i in 1..1000) {
                     delay(2000)
@@ -23,4 +22,3 @@ class DemoViewModel : ViewModel() {
             }
         }
     }
-}
