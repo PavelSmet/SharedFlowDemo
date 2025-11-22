@@ -20,9 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             SharedFlowDemoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    ScreenSetup(Modifier.padding(innerPadding)
                     )
                 }
             }
@@ -40,8 +38,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun ScreenSetupreview() {
     SharedFlowDemoTheme {
-        Greeting("Android")
+        ScreenSetup
     }
 }
