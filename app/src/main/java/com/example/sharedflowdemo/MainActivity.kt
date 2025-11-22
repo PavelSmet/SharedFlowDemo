@@ -40,9 +40,10 @@ class MainActivity : ComponentActivity() {
 
 @Preview(showBackground = true)
 @Composable
-fun ScreenSetupreview() {
+fun GreetingPreview() {
     SharedFlowDemoTheme {
-        ScreenSetup()
+        val viewModel: DemoViewModel = viewModel()
+        MainScreen(sharedFlow = viewModel.sharedFlow)
     }
 }
 
